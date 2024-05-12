@@ -7,9 +7,9 @@ def g2():
     gr2=st.text_input('gene 2')
     return gr2
 def predict(gr1, gr2):
-    lmod=pickle.load(open('knn_model.pkl', 'rb'))
+    limod=pickle.load(open('knn_model.pkl', 'rb'))
     nd=[[float(gr1), float(gr2)]]
-    pre=lmod.predict(nd)
+    pre=limod.predict(nd)
     st.write('the cancer is')
     if pre==0:
         st.write('not present')
