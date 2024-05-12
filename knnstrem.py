@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+import sklearn
 def g1():
     gr1=st.text_input('gene 1')
     return gr1
